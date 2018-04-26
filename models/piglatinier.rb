@@ -1,4 +1,4 @@
-class PigLatinizer 
+class PigLatinizer
   attr_accessor :phrase
   def initialize(phrase)
     @phrase = phrase
@@ -13,7 +13,7 @@ class PigLatinizer
     word.split("").each do |letter|
       if word[0].start_with?('a', 'e', 'i', 'o', 'u')
         new_word = word + "way"
-        new_arr << new_word 
+        new_arr << new_word
         break;
       elsif letter.start_with?('a', 'e', 'i', 'o', 'u')
         test = word.slice!(0..count-1)
