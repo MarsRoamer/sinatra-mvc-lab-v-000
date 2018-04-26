@@ -6,7 +6,7 @@ class PigLatinizer
     # self.piglatinizer(@phrase)
   end
 
-  def piglatinize
+  def piglatinize(word = nil)
   arr = @phrase.split(" ")
   new_arr = []
   arr.each do |word|
