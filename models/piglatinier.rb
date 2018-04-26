@@ -11,7 +11,7 @@ class PigLatinizer
   arr.each do |word|
     count = 0
     word.split("").each do |letter|
-      if word[0].start_with?('A', 'a' 'E',.'e', 'I', 'i,' 'O', 'o', 'U', 'u')
+      if word[0].start_with?('A', 'a' 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u')
         new_word = word + "way"
         new_arr << new_word
         break;
