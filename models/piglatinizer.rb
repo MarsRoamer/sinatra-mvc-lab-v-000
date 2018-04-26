@@ -1,6 +1,6 @@
 class PigLatinizer
   attr_accessor :phrase
-  
+
   def initialize(phrase = nil)
     @phrase = phrase
     # self.piglatinizer(@phrase)
