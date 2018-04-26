@@ -2,7 +2,7 @@ class PigLatinizer
   attr_accessor :phrase
   def initialize(phrase)
     @phrase = phrase
-    self.piglatinizer(@phrase)
+    # self.piglatinizer(@phrase)
   end
 
   def piglatinizer(phrase)
