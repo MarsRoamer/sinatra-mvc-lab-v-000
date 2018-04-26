@@ -7,12 +7,13 @@ class App < Sinatra::Base
   end
 
   post "/piglatinize" do
-    @test = PigLatinizer.new(params[:string])
+    @test = PigLatinizer.new(params[:user_phrase])
 
     erb :piglatin
   end
 
   get "/piglatinize" do
+
     erb :piglatin
   end
 
